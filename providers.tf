@@ -1,4 +1,4 @@
-# Configure the Azure provider
+# Configure the Azure provider & backend statemanager
 terraform {
   required_providers {
     azurerm = {
@@ -6,10 +6,14 @@ terraform {
       version = "4.2.0"
     }
   }
-
+  backend "azurerm" {
+    resource_group_name  = "tf_resourcegroup"
+    storage_account_name = "terraformsa24"
+    container_name       = "terraformcontainer24"
+    key                  = "terraform.tfstate"
+  }
   required_version = ">= 1.1.0"
 }
-
 
 provider "azurerm" {
   features {}

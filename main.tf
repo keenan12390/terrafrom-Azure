@@ -1,17 +1,3 @@
-terraform {
-  required_version = ">= 1.1.0"
-
-  cloud {
-    organization = "Azure-Cloud-Space" 
-
-    workspaces { 
-      name = "Azure-impl" 
-    } 
-  }
-}
-
-
-
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
   location = var.location

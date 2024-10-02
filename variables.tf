@@ -1,3 +1,22 @@
+# variable "resource_group_name" {
+#   default = "tfstaterg"
+#   type    = string
+# }
+
+# variable "location" {
+#   default = "eastus"
+#   type    = string
+# }
+
+# variable "container_name" {
+#   default = "tfstate24"
+#   type    = string
+# }
+
+# variable "storage_account_name" {
+#   default = "tfstatesa24"
+#   type    = string
+# }
 variable "resource_group_name" {
   default = "tf_resourcegroup"
   type    = string
