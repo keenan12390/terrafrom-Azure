@@ -1,19 +1,19 @@
 import {
   to = azurerm_resource_group.rg2
-  id = "/subscriptions/bd09dfbd-3076-4f7f-88b9-d1340ee0a100/resourceGroups/tfstaterg"
+  id = var.import_resource_group_2_id
 }
 
 import {
   to = azurerm_resource_group.rg
-  id = "/subscriptions/bd09dfbd-3076-4f7f-88b9-d1340ee0a100/resourceGroups/tf_resourcegroup"
+  id = var.import_resource_group_id
 }
 
 import {
   to = azurerm_storage_account.main
-  id = "/subscriptions/bd09dfbd-3076-4f7f-88b9-d1340ee0a100/resourceGroups/tf_resourcegroup/providers/Microsoft.Storage/storageAccounts/terraformsa24"
+  id = var.import_storage_account_id
 }
 
 import {
   to = azurerm_storage_container.main
-  id = "https://terraformsa24.blob.core.windows.net/terraformcontainer24"
+  id = var.import_container_id
 }
